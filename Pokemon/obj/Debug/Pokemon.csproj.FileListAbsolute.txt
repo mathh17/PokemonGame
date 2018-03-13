@@ -1,0 +1,16 @@
+C:\Users\Marco\Git\pokemon\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\Marco\Git\pokemon\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\Marco\Git\pokemon\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\Marco\Git\pokemon\Pokemon\obj\Debug\Pokemon.csprojResolveAssemblyReference.cache
+C:\Users\Marco\Git\pokemon\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Git\pokemon\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\Marco\Git\pokemon\Pokemon\obj\Debug\Pokemon.pdb
+C:\Users\Marco\Git\pokemon\Pokemon\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\obj\Debug\Pokemon.csprojResolveAssemblyReference.cache
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\Mathias-Ø\Desktop\GITHUB\PokemonGame\Pokemon\obj\Debug\Pokemon.pdb
