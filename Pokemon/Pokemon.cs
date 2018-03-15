@@ -69,12 +69,12 @@ namespace Pokemon
         public double Attack(double damage)
         {
             //this function only adds the dmg to the enemy
-            /*
+            
             if (damage < 0)
             {
                 damage = 0;
             }
-            */
+            
             hp = hp - damage;
             return hp > 0 ? hp : 0;
         }

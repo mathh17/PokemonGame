@@ -8,6 +8,7 @@ namespace Pokemon
 {
     class Program
     {
+        //function so the moves can be printet to the console
         private static void PrintMovesAvailable(Pokemon playerPokemon)
         {
             for (int i = 0; i < playerPokemon.Moves.Count; i++)
@@ -16,7 +17,7 @@ namespace Pokemon
 
             }
         }
-
+        //function so the pokemons can be printet to the console
         private static void PrintPokemons(List<Pokemon> rosterPokemons)
         {
             for (int j = 0; j < rosterPokemons.Count; j++)
@@ -31,6 +32,7 @@ namespace Pokemon
             
             // INITIALIZE YOUR THREE POKEMONS HERE
 
+            //the pokemon's moves
             List<Move> charmanderMoves = new List<Move>();
             charmanderMoves.Add(new Move("Ember", "1"));
             charmanderMoves.Add(new Move("Fire Blast", "2"));
@@ -44,6 +46,7 @@ namespace Pokemon
             squirtleMoves.Add(new Move("Bubble", "1"));
             squirtleMoves.Add(new Move("Bite", "2"));
 
+            //making the pokemons and adding them to the list
             Pokemon charmander = new Pokemon("Charmander", 3, 52, 43, 39, Elements.Fire, charmanderMoves);
             Pokemon bulbasaur = new Pokemon("Bulbasaur", 3, 49, 49, 45, Elements.Grass, bulbasaurMoves);
             Pokemon squirtle = new Pokemon("Squirtle", 2, 48, 65, 44, Elements.Water, squirtleMoves);
@@ -76,6 +79,7 @@ namespace Pokemon
                         PrintPokemons(roster);
                         break;
 
+                        //the player can get the list of commands from the main menu
                     case "commands":
                         Console.WriteLine("These are the commmands you can write:");
                         Console.WriteLine("list");
@@ -86,6 +90,7 @@ namespace Pokemon
 
                         break;
 
+                        //the player cna examine the pokemons to check their stats
                     case "examine":
                         Console.WriteLine("Choose a pokemon to examine");
                         switch (Console.ReadLine())
@@ -126,9 +131,11 @@ namespace Pokemon
                         Console.Write("Choose which pokemon should fight:" + "\n");
 
                         //READ INPUT, REMEMBER IT SHOULD BE TWO POKEMON NAMES
+                        //making the input into an array
                         string command = Console.ReadLine();
                         string[] input = command.Split(' ');
                         var numberOfInputs = input.Count();
+                        //checking if there is two inputs
                         if (numberOfInputs != 2)
                         {
                             Console.WriteLine("Invalid amount of pokemons chosen");
@@ -138,15 +145,15 @@ namespace Pokemon
                         //BE SURE TO CHECK THE POKEMON NAMES THE USER WROTE ARE VALID (IN THE ROSTER) AND IF THEY ARE IN FACT 2!
                         Pokemon player = null;
                         Pokemon enemy = null;
-                        Random random = new Random();
-                        int randPok = random.Next(0,roster.Count + 1);
+                       
                         //function for player choosing pokemon
                         player = roster.SingleOrDefault(p => p.Name.ToLower().StartsWith(input[0].ToLower()));
 
-                       // enemy = roster.Single(p => p.)
 
                         //function for enemy getting a pokemon assigned
                         enemy = roster.SingleOrDefault(p => p.Name.ToLower().StartsWith(input[1].ToLower()));
+
+                        //if-statement to check if the pokemons are valid
                         if (player == null || enemy == null)
                         {
                             Console.WriteLine("The player and the enemy was not assigned correctly");
@@ -171,8 +178,10 @@ namespace Pokemon
                                 
 
                                 //GET USER ANSWER, BE SURE TO CHECK IF IT'S A VALID MOVE, OTHERWISE ASK AGAIN
+                                //reading the input from the user to see which move they chose
                                 string chosenMoveInput = Console.ReadLine();
                                 var myChosenMove = player.GetMoveByInput(chosenMoveInput);
+                                //to check if it was a valid move
                                 if (myChosenMove == null)
                                 {
                                     //Userinput was invalid, print the available moves
@@ -182,12 +191,6 @@ namespace Pokemon
 
 
                                 //CALCULATE AND APPLY DAMAGE
-
-                                //calculate elemental damage
-
-                                //// - defence
-                                //double damage = player.CalculateTotalDamage(enemy.element);
-                                // calculate resulting damage 
                                 double resultingDamage = player.CalculateTotalLostHP(enemy);
                                 
 
